@@ -1,5 +1,6 @@
 # MongoLogger
-A log library for c#, Quick and simple log any object to Mongodb, support colud mlab mognodb server.
+A simple log library for C#  
+Quick and simple log any object to Mongodb, support colud mlab mognodb server.
 
 # Nuget
 Install-Package MongoLogger
