@@ -41,7 +41,8 @@ https://github.com/rolence0515/MongoLogger/tree/master/ConsoleApplication1/Mongo
 1.User LogLevel to setting what level you want to log to.  
 2.Not only silent log info to mongodb, but also supprt mail notify  
 3.BatchPostingLimit and BatchTimePostingLimit supprt log buffer, prevent write too often.  
-4.Eazy to use  
+4.Mongodb capped collection support, cycling uses collection space, the limitation is CollectionMB.  
+4.Eazy to use.
 
 #Reference
 https://serilog.net/
