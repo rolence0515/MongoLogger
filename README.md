@@ -33,7 +33,7 @@ https://github.com/rolence0515/MongoLogger/tree/master/ConsoleApplication1/Mongo
             );
 		
 		
-			      //log
+	 //log
             Log.Information("This is test log:{@app},{count}", new { author = "rolence" }, 1);
             Log.Error(new Exception("Test exception"), "This is test error log:{@app},{count}", new { author = "rolence" }, 1);
             
