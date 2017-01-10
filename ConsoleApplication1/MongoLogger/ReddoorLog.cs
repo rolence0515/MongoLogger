@@ -150,5 +150,24 @@ namespace MongoLogger
 
             return writeto;
         }
+
+        public static LoggerConfiguration DefaultWriteTo
+        (
+            AppOption app,
+            MailNotifyOption mail,
+            MongoOption mo
+        )
+        {
+            var mov2 = new MongoOptionV2()
+            {
+                BatchPostingLimit = mo.BatchPostingLimit,
+                BatchTimePostingLimit = mo.BatchTimePostingLimit,
+                CollectionMB = mo.CollectionMB,
+                CollectionName = mo.CollectionName,
+                LogLevel = mo.LogLevel,
+                DatabaseUrl = string.Format("mongodb://{0}:{1}/{2}", mo.MongoDBIp, "27017", app.AuthorName + "_" + app.ProjectName)
+            };
+            return DefaultWriteTo(app, mail, mov2);
+        }
     }
 }
