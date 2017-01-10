@@ -18,7 +18,6 @@ using MongoDB.Driver;
 using MongoLogger;
 using Serilog.Configuration;
 using Serilog.Events;
-
 //using Serilog.Sinks.MongoDB;
 using System;
 
